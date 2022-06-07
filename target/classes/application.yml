@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://127.0.0.1:3306/api2
+    name: root
+    password: qibosoft
+  redis:
+    host: 127.0.0.1
+    port: 6379
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath*:mapper/*.xml
+  type-aliases-package: com.lfwin.pojo
