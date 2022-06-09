@@ -1,9 +1,9 @@
 spring:
   datasource:
-    type: com.alibaba.druid.pool.DruidDataSource
-    url: jdbc:mysql://127.0.0.1:3306/api2
-    name: root
+    url: jdbc:mysql://127.0.0.1:3306/api2?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
     password: qibosoft
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
   redis:
     host: 127.0.0.1
     port: 6379

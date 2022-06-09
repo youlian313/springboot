@@ -12,7 +12,12 @@ public class ApikeyTest {
     @Test
     public void getKeyInfoTest(){
         apiKey.setKey("00014005");
-        String keyInfo = apiKey.getKeyInfo();
+        String keyInfo = null;
+        try {
+            keyInfo = apiKey.getKeyInfo();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
         System.out.println(keyInfo);
     }
 }

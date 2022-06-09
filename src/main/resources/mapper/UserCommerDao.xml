@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lfwin.dao.UserCommerDao">
+    <select id="getByUid" resultType="UserCommer">
+        select app_auth_token,user_id,nickname,pid,heli_sub_appid,smile_auth_token,fuiou_appid,wx_receipt,channel,reserve_channel,domain,fixed_xcx_path,is_mini_receipt
+         from pos_crm_user_commer where del=0 and uid=#{uid}
+    </select>
+</mapper>
